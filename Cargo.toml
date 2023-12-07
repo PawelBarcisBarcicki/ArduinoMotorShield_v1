@@ -1,0 +1,15 @@
+[package]
+name = "arduino-motor-shield-v1"
+version = "0.1.0"
+edition = "2021"
+authors = ["Paweł Barcicki <pawel.barcicki@batusystems.pl>"]
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+panic-serial = { version = "0.1.2", features = ["full"] }
+ufmt = "0.2.0"
+
+[dependencies.arduino-hal]
+git = "https://github.com/rahix/avr-hal"
+rev = "1a0040dc07d37054ccaa93d43a9d2db5f46da3b2"
+features = ["arduino-uno"]
